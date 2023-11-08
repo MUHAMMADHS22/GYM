@@ -396,7 +396,9 @@ p {
 
 
 
-/* responsive */
+
+
+/* Responsive styles for mobile devices */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -412,50 +414,58 @@ p {
     }
 
     .text-box p {
-        width: 381px;
-        margin-left: 67px;
-
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
     }
 
     .hero-btn {
-        padding: 12px;
-
+        padding: 12px 24px;
     }
 
     .course {
         padding: 20px;
-        /* Add padding to the section for better spacing on smaller screens */
     }
 
     .row {
         flex-direction: column;
-        /* Change the flex direction to stack columns vertically */
     }
 
-    /* Adjust individual course columns */
     .course-col {
         margin-bottom: 20px;
-        /* Add spacing between course columns */
     }
 
-    /* testimonial Responsive */
     .testimonial-col {
         max-width: 80%;
-        margin: 40px;
-
+        margin: 20px 0;
     }
-    /* cta responsive */
+
     .cta {
-        padding: px 0;
-        margin: 12px 50px;
+        padding: 60px 0;
+        margin: 20px 0;
     }
 
     .cta h1 {
         font-size: 1.5rem;
-        margin-left: 9px;
-
+        margin: 20px 0;
     }
-    .hero-btn {
-        padding: 12px;
 }
+
+/* Responsive styles for tablet devices */
+@media (max-width: 1024px) {
+    .text-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .course-col {
+        flex-basis: 47%;
+    }
+
+    .cta h1 {
+        font-size: 2rem;
+    }
 }
